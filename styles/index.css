@@ -22,12 +22,12 @@ a{
 }
 
 #hamburger-button {
-    font-size: 3rem;
+    font-size: 2rem;
     border: 0;
     background: none;
     color: black;
     position: absolute;
-    top: 1rem;
+    top: 0.2rem;
     right: 1rem;
 }
 
