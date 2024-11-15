@@ -18,7 +18,7 @@ hamButton.addEventListener('click', () => {
 });
 
 // display business data function
-const businessFile = '../data/members.json';
+const businessFile = 'chamber/data/members.json';
 const businessCard = document.querySelector("#businessCard");
 
 const displaydata = (businessMembers) => {
