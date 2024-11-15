@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage for WDD231 repositories">
+    <meta name="author" content="Jackson T. Chapman">
+    <meta property="og:title" content="WDD 231 - Web Frontend Development 1 - Jackson T. Chapman Introduction">
+    <meta property="og:type" content="website"> 
+    <meta property="og:url" content="https://chapman-jackson.github.io/wdd231/"> 
+    <meta property="og:image" content="https://media.istockphoto.com/id/1029794260/photo/billings-montana.jpg?s=612x612&w=0&k=20&c=-GgfKGPexFONkVHbdefhBj74P9n32tlh70xnzOmzbM4="> 
+    <meta property="og:description" content="Homepage for WDD231 repositories">
+    <title>WDD 231 - Web Frontend Development 1 - Jackson T. Chapman Introduction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="personalInfo">
+            <picture>
+                <source srcset="images/my-image-large.jpeg"  media="(min-width: 700px)">
+                <img src="images/my-image-small.jpeg" alt="Image of Jackson Chapman">
+            </picture>
+            <h1>Jackson T. Chapman</h1>
+        </div>
+        <button type ="button" id="hamburger-button" aria-label="Open navigation menu"></button>
+
+        <nav class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">Chamber</a>
+            <a href="https://github.com/chapman-jackson">GitHub Profile</a>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="content">
+            <section id="courseWork">
+                <h2>Course Work</h2>
+                <ul>
+                    <li>WDD231 - Web Frontend Development 1</li>
+                </ul>
+            </section>
+
+            <section id="countryInfo">
+                <h2>Montana, United States</h2>
+                <picture>
+                    <source srcset="images/beartooth-mtns-large.jpeg"  media="(min-width: 700px)">
+                    <img src="images/beartooth-mtns-small.jpeg" alt="Beartooth Mountain range">
+                </picture>
+                <p>Beartooth Mountain Range</p>
+            </section>
+        </div>
+            <section id="certificateClasses">
+                <h2>Web and Computer Programming Certificate</h2>
+                <nav id="classes">
+                    <a href="index.html" id="allClass">All</a>
+                    <a href="#" id="cseClass">CSE</a>
+                    <a href="#" id="wddClass">WDD</a>
+                    <span id="classCards"></span>
+                    <p id="displayCredits"></p>
+                </nav>
+            </section>
+            
+    </main>
+
+    <footer>
+
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,200 @@
+header{
+    background-color: steelblue;
+}
+
+p{
+    font-family: Roboto,sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+#hamburger-button {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: black;
+    position: absolute;
+    top: 0.2rem;
+    right: 1rem;
+}
+
+#hamburger-button::before {
+    content: "≡";
+}
+
+#hamburger-button.open::before {
+    content: "X";
+}
+
+#personalInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#headerImage{
+    max-width: 200px;
+    max-height: 350px;
+    padding-top: 30px;
+}
+
+header, h1{
+    font-size: 1.5em;
+}
+
+header nav {
+    background-color: slategrey;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    color: black;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.navigation a.active {
+     color: red; 
+     background-color: darkslategray; 
+     border-radius: 5px; 
+    }
+    
+h2{
+    background-color: steelblue;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+
+#courseWork {
+    border: 2px solid black;
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+    background-color: lightgray;
+}
+
+#countryInfo {
+    border: 2px solid black;
+    width: 100%;
+    height: 20rem;
+    text-align: center;
+    background-color: lightgray;
+}
+
+#certificateClasses {
+    border: 2px solid black;
+    height: 20rem;
+    width: 100%;
+    background-color: lightgray;
+}
+
+picture {
+    padding-top: 20px;
+}
+
+footer{
+    background-color: steelblue;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px;
+    margin-top: 3%;
+}
+
+#certificateClasses a{
+    background-color: slategrey;
+    font-size: 1.5rem;
+    padding: 10px 30px 10px 30px;
+    border-radius: 3%;
+}
+
+
+#classes {
+text-align: center;
+}
+
+#classCards {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width : 700px){
+    #content{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        padding: 40px 40px;
+    }
+
+    #courseWork {
+        border: 2px solid black;
+        height: 20rem;
+        text-align: center;
+    }
+    
+    #countryInfo {
+        border: 2px solid black;
+        height: 20rem;
+        text-align: center;
+    }
+    
+    
+}
+
+@media screen and (min-width : 700px) {
+    #hamburger-button{
+        display: none;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #content{
+        display: flex;
+        justify-content: space-between;
+        padding: 3%;
+    }
+
+    #courseWork {
+        border: 2px solid black;
+        width: 60%;
+        height: 20rem;
+        text-align: center;
+    }
+    
+    #countryInfo {
+        border: 2px solid black;
+        width: 30%;
+        height: 20rem;
+        text-align: center;
+    }
+
+    header, h1{
+        font-size: 2em;
+    }
+}
