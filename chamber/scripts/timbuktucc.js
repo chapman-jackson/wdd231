@@ -18,7 +18,7 @@ hamButton.addEventListener('click', () => {
 });
 
 // display business data function
-const businessFile = 'https://chapman-jackson.github.io/wdd231/data/members.json';
+const businessFile = 'https://chapman-jackson.github.io/wdd231/chamber/data/members.json';
 const businessCard = document.querySelector("#businessCard");
 
 const displaydata = (businessMembers) => {
