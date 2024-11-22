@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="WDD 231 - Web Frontend Development 1 - Timbuktu Chamber of Commerce directory page">
+    <meta property="og:title" content="WDD 231 - Web Frontend Development 1 - Timbuktu Chamber of Commerce home page">
     <meta property="og:type" content="website"> 
-    <meta property="og:url" content="https://chapman-jackson.github.io/wdd231/chamber/directory.html"> 
+    <meta property="og:url" content="https://chapman-jackson.github.io/wdd231/chamber/index.html"> 
     <meta property="og:image" content="https://chapman-jackson.github.io/wdd231/chamber/images/timbuktu-hero-large.jpg">
-    <meta name="title" content="Timbuktu's Chamber of Commerce Directory Page">
+    <meta name="title" content="Timbuktu's Chamber of Commerce Home Page">
     <meta name="author" content="Jackson T. Chapman">
-    <meta name="description" content="Chamber of Commerce directory for Timbuktu contain information about events, weather, and businesses">
+    <meta name="description" content="Chamber of Commerce home page for Timbuktu contains information about events, weather, and businesses">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Timbuktu Chamber of Commerce Directory Page</title>
+    <title>Timbuktu Chamber of Commerce Home Page</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/timbuktucc.css">
-    <script src="scripts/timbuktucc.js" defer></script>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/weatherapi.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
 </head>
 <body>
     <header>
@@ -43,8 +45,16 @@
                 <img src="images/timbukto-hero-small.jpeg" alt="Building in Timbuktu">
             </picture>
         </div>
+
+        <div class="action-container">
+            <nav>
+                <a href="join.html" id="call-to-action">Join Our Commerce</a>
+            </nav>
+        </div>
+
         <h2>Home</h2>
-        <div id="cityCards">
+
+        <div class="cityCards">
 
             <div class="events">
                 <h3>Events</h3>
@@ -58,28 +68,43 @@
 
             <div class="currentWeather">
                 <h3> Current Weather</h3>
-                    <p>95°F</p>
-                    <p>Partly Cloudy</p>
-                    <p>High: 105°</p>
-                    <p>Low: 75°</p>
-                    <p>humidity: 31%</p>
-                    <p>Sunrise: 6:45am</p>
-                    <p>Sunset: 11:30pm</p>
-
+                <figure>
+                    <img id="weather-icon" src="" alt="Weather icon">
+                    <figcaption></figcaption>
+                </figure>
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Wind speed: <span id="wind-speed"></span></p>
+                <p>High: <span id="temperature-high"></span></p>
+                <p>Low: <span id="temperature-low"></span></p>
             </div>
 
-            <div class="forecast">
-                <h3> Weather Forecast</h3>
-                <p>Today: 100°</p>
-                <p>Friday: 75°</p>
-                <p>Saturday: 60°</p>
+
+            <div class="forecast1">
+                <p> <span id="forecast-date1"></span></p>
+                <p><span id="forecast-temp1"></span></p>
+                <p><span id="forecast-windspeed1"></span></p>
+                <p><span id="forecast-hightemp1"></span></p>
+                <p><span id="forecast-lowtemp1"></span></p>
+            </div>
+
+            <div class="forecast2">
+                <p> <span id="forecast-date2"></span></p>
+                <p><span id="forecast-temp2"></span></p>
+                <p><span id="forecast-windspeed2"></span></p>
+                <p><span id="forecast-hightemp2"></span></p>
+                <p><span id="forecast-lowtemp2"></span></p>
+            </div>
+
+            <div class="forecast3">
+                <p> <span id="forecast-date3"></span></p>
+                <p><span id="forecast-temp3"></span></p>
+                <p><span id="forecast-windspeed3"></span></p>
+                <p><span id="forecast-hightemp3"></span></p>
+                <p><span id="forecast-lowtemp3"></span></p>
             </div>
         </div>
 
-        <div id="toggleButtons">
-        <button type ="button" id="toggle-grid" aria-label="Toggle display format to grid for business cards">Grid View</button>
-        <button type ="button" id="toggle-list" aria-label="Toggle display format to list for business cards">List View</button>
-        </div>
+        <h2 class="spotlights">Business Spotlights</h2>
         <div id="businessCard"></div>
     </main>
     <footer>
