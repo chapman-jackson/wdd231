@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const forecast = data.forecast.forecastday;
         forecast.forEach((day, index) => {
             const dayIndex = index + 1;
-            const date = new Date(day.date + 'T00:00:00');
+            const date = new Date(day.date);
+            date.setDate(date.getDate() + 1);
             const formatDate = `${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getDate().toString().padStart(2, '0')}/${date.getFullYear()}`
             document.querySelector(`#forecast-date${dayIndex}`).innerHTML = `Forecast date: ${formatDate}`;
             document.querySelector(`#forecast-hightemp${dayIndex}`).innerHTML = `High: ${day.day.maxtemp_f}°F`;

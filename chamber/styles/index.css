@@ -168,7 +168,7 @@ section a:hover{
     text-align: center;
     padding-top: 3rem;
 }
-@media screen and (min-width: 700) { 
+@media screen and (min-width: 700px) { 
 
     #hamburger-button{
         display: none;
