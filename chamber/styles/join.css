@@ -1,0 +1,59 @@
+#page-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cards{
+    border: 5px solid black;
+    border-radius: 5%;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    animation: colorShift 10s;
+    background-color: slategrey;
+}
+
+#membership-cards{
+    gap: 3rem;
+}
+
+#writeBox{
+    margin-bottom: 1.5rem;
+}
+#application{
+    height: 44px;
+    margin-bottom: 2rem;
+}
+
+#coc-form{
+    display: flex;
+    flex-direction: column;
+}
+
+dialog { 
+    border: none; padding: 1em; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+} 
+
+dialog::backdrop { 
+    background: rgba(0, 0, 0, 0.8); 
+}
+@media screen and (min-width: 700px) { 
+
+    #page-content{
+        display: flex;
+        flex-direction: row;
+        gap: 6rem;
+    }
+    
+
+}
+
+@keyframes colorShift{
+    0% { background-color: #708090; }
+    25% { background-color:  #dc143c;}
+    50% { background-color: #ff4d4d; }
+    75% { background-color: #ff1a1a; }
+    100% { background-color: #dc143c;}
+}

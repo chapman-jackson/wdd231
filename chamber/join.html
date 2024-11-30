@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="WDD 231 - Web Frontend Development 1 - Timbuktu Chamber of Commerce membership application form">
+    <meta property="og:type" content="website"> 
+    <meta property="og:url" content="https://chapman-jackson.github.io/wdd231/chamber/join.html"> 
+    <meta property="og:image" content="https://chapman-jackson.github.io/wdd231/chamber/images/timbuktu-hero-large.jpg">
+    <meta name="title" content="Timbuktu's Chamber of Commerce membership application form">
+    <meta name="author" content="Jackson T. Chapman">
+    <meta name="description" content="Chamber of Commerce membership application form">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Timbuktu Chamber of Commerce membership application form</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/timbuktuform.js" defer></script>
+</head>
+<body>
+    <header>
+
+        <div class="headerTitle">
+            <img src="images/mali-flag.jpeg" alt="Image of the flag of Mali" class="headerIcon">
+            <div class="headerWords">
+            <h1>Timbuktu</h1>
+            <p>Chamber of Commerce</p>
+            </div>
+         </div>
+        <button type ="button" id="hamburger-button" aria-label="Open navigation menu"></button>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+
+    </header>
+    <dialog id="nonProfit-content"></dialog>
+    <dialog id="bronze-content"></dialog>
+    <dialog id="silver-content"></dialog>
+    <dialog id="gold-content"></dialog>
+    <main>
+        <h1>Join</h1>
+        <div id="page-content">
+            <div id="join-form">
+                <form method="get" action="thankyou.html" autocomplete="on" id="coc-form">
+                <h2>Application Form</h2>
+                    <input type="hidden" name="timestamp" id="time-stamp">
+        
+                    <p>First Name (required)</p> 
+                    <label><input type="text" name="firstName" id="firstName" aria-label="enter your first name" required autocomplete="given-name"></label>
+
+                    <p>Last Name (required)</p> 
+                    <label><input type="text" name="lastName" id="lastName" aria-label="enter your last name" required autocomplete="family-name"></label>
+
+                    <p>Title</p> 
+                    <label><input type="text" name="title" id="title" aria-label="enter your title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" minlength="7"></label>
+
+                    <p>Email (required)</p>
+                    <label><input type="email" name="email" id="organizationemail" aria-label="enter your email" placeholder="johndoe@example.com" required autocomplete="email"></label>
+
+                    <p>Phone Number (required)</p>
+                    <label><input type="tel" name="phone" id="phone" aria-label="enter your phone number" placeholder="123-456-7890" required autocomplete="tel"></label>
+
+                    <p>Organization Name (required)</p>
+                    <label><input type="text" name="organization-name" id="organization-name" aria-label="enter your organization name" required autocomplete="organization"></label>
+
+                    <p>Membership Level</p>
+                    <label>
+                        <select name="membershiplevel" id="membershipLevel" aria-label="select membership level">
+                            <option value="placeholder" disabled selected>Choose Membership v</option>
+                            <option value="non-profit">NP (non-profit)</option>
+                            <option value="bronze">Level 1 - Bronze</option>
+                            <option value="silver">Level 2 - Silver</option>
+                            <option value="gold">Level 3 - Gold</option>
+                        </select>
+                    </label>
+
+                    <p>Organization Description</p>
+                    <label><textarea name="writtendescription" id="writeBox" aria-label="write your organization description"></textarea></label>
+
+                    <input type="submit" value="Begin Application" id="application" aria-label="begin application">
+                </form>
+
+            </div>
+            <div id="membership-cards">
+                <h2>Membership Levels</h2>
+                <div class="cards">
+                    <h4>Non-Profit</h4>
+                    <button type="button" id="non-profit-card">Learn More</button>
+                </div>
+                <div class="cards">
+                    <h4>Bronze</h4>
+                    <button type="button" id="bronze-card">Learn More</button>
+                </div>
+                <div class="cards">
+                    <h4>Silver</h4>
+                    <button type="button" id="silver-card">Learn More</button>
+                </div>
+                <div class="cards">
+                    <h4>Gold</h4>
+                    <button type="button" id="gold-card">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="contactInfo">
+            <h3>Timbuktu Chamber of Commerce</h3>
+            <p>10 Rue De La Paix</p>
+            <p> Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+
+            <nav class="social-icons">
+                <a href="https://www.youtube.com/"><img src="images/youtube.jpeg" alt="YouTube Icon" class="icon"></a>
+                <a href="https://x.com/"><img src="images/x.jpeg" alt="X, formerly Twitter Icon" class="icon"></a>
+                <a href="https://www.linkedin.com/"><img src="images/linkedin.jpeg" alt="LinkedIn Icon" class="icon"></a>
+            </nav>
+       
+
+        <div class="classInfo">
+            <p>WDD231 Class Project</p>
+            <p>Jackson Chapman</p>
+            <p><span id="currentyear"></span></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
