@@ -110,7 +110,40 @@ nav a:hover {
     text-align: center;
 }
 
-@media screen and (min-width: 700px) { 
+.discover-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery{
+   text-align: center;
+}
+
+img{
+ border: 5px solid black;
+ border-radius: 10%;
+}
+
+
+@media screen and (min-width: 64rem) { 
+
+    .discover-content{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+    
+    .sidebar{
+        grid-column: 1;
+        padding-top: 5%;
+        padding-left: 5%;
+    }
+    .gallery{
+        grid-column: 2;
+    }
+    
+    .hover-effect:hover{
+        box-shadow: 0 0 50px #dc143c;
+    }
 
     #hamburger-button{
         display: none;

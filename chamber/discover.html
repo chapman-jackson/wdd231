@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="WDD 231 - Web Frontend Development 1 - Timbuktu Chamber of Commerce discover page">
+    <meta property="og:type" content="website"> 
+    <meta property="og:url" content="https://chapman-jackson.github.io/wdd231/chamber/discover.html"> 
+    <meta property="og:image" content="https://chapman-jackson.github.io/wdd231/chamber/images/timbuktu-hero-large.jpg">
+    <meta name="title" content="Timbuktu's Chamber of Commerce discover page">
+    <meta name="author" content="Jackson T. Chapman">
+    <meta name="description" content="Chamber of Commerce discover page">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Timbuktu Chamber of Commerce Discover Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/dynamic-message.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/weatherapi.js" defer></script>
+</head>
+<body>
+    <header>
+
+        <div class="headerTitle">
+            <img src="images/mali-flag.jpeg" alt="Image of the flag of Mali" class="headerIcon">
+            <div class="headerWords">
+            <h1>Timbuktu</h1>
+            <p>Chamber of Commerce</p>
+            </div>
+         </div>
+        <button type ="button" id="hamburger-button" aria-label="Open navigation menu"></button>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+
+    </header>
+    <main>
+
+        <div class="discover-content">
+            <div class="sidebar">
+
+                <div class="cards">
+                    <p><span id="welcome-message"></span></p>
+                </div>
+
+                <div class="cards">
+                    <h3>Timbuktu Region:</h3>
+                    <ul>
+                        <li>Population: 785,294</li>
+                        <li>Area: 190,985.5 mi²</li>
+                        <li>Timezone: Greenwich Mean Time</li>
+                        <li>Elevation: 868 feet above sea level</li>
+                    </ul>
+                </div>
+                <div class="cards">
+                    <h3>Events</h3>
+                    <ul>
+                        <li>11/28/24: Craft fair at town square</li>
+                        <li>12/3/24: Career Fair at town square</li>
+                        <li>12/12/24: Movie in the park</li>
+                        <li>12/25/24: Christmas dinner at town square</li>
+                    </ul>
+                </div>
+
+                <div class="cards">
+                    <h3> Current Weather</h3>
+                    <figure>
+                        <img id="weather-icon" src="images/placeholder.png" alt="Weather icon">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p>Temperature: <span id="temperature"></span></p>
+                    <p>Wind speed: <span id="wind-speed"></span></p>
+                    <p>High: <span id="temperature-high"></span></p>
+                    <p>Low: <span id="temperature-low"></span></p>
+                </div>
+
+            </div>
+
+            <div class="gallery">
+                <figure>
+                    <img src="images/sidi-yahia-mosque.jpg" alt="Sidi Yahia Mosque" class="hover-effect" loading="lazy">
+                    <figcaption>Sidi Yahia Mosque</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/djinguereber-mosque.jpeg" alt="Djinguereber Mosque" class="hover-effect" loading="lazy">
+                    <figcaption>Djinguereber Mosque</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/sankore-madrasah-mosque.jpg" alt="Sankore Madrasah Mosque" class="hover-effect" loading="lazy">
+                    <figcaption>Sankore Madrasah Mosque</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/timbuktu-library.jpg" alt="Timbuktu Ancient Library" class="hover-effect" loading="lazy">
+                    <figcaption>Timbuktu Ancient Library</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/timbuktu-market.jpg" alt="Street Market in Timbuktu" class="hover-effect" loading="lazy">
+                    <figcaption>Street Market in Timbuktu</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/camel-caravan.jpg" alt="Camel Caravan" class="hover-effect" loading="lazy">
+                    <figcaption>Camel Caravan</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+        <div class="contactInfo">
+            <h3>Timbuktu Chamber of Commerce</h3>
+            <p>10 Rue De La Paix</p>
+            <p> Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </div>
+
+            <nav class="social-icons">
+                <a href="https://www.youtube.com/"><img src="images/youtube.jpeg" alt="YouTube Icon" class="icon"></a>
+                <a href="https://x.com/"><img src="images/x.jpeg" alt="X, formerly Twitter Icon" class="icon"></a>
+                <a href="https://www.linkedin.com/"><img src="images/linkedin.jpeg" alt="LinkedIn Icon" class="icon"></a>
+            </nav>
+       
+
+        <div class="classInfo">
+            <p>WDD231 Class Project</p>
+            <p>Jackson Chapman</p>
+            <p><span id="currentyear"></span></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
