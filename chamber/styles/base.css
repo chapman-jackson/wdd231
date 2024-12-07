@@ -116,7 +116,9 @@ nav a:hover {
 }
 
 .gallery{
-   text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }
 
 img{
@@ -137,6 +139,7 @@ img{
         padding-top: 5%;
         padding-left: 5%;
     }
+
     .gallery{
         grid-column: 2;
     }
